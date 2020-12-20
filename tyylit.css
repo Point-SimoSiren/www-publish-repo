@@ -1,0 +1,168 @@
+table {
+  margin-left: 15px;
+  margin-bottom: 100px;
+  width:260px;
+}
+table, th, td {
+  border: 1px solid blue;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+
+
+.mobi {
+  background-image: url("kuva2.png");
+  background-attachment: fixed;
+  background-position: center;
+  margin-left: 10px;
+  height: 900px;
+  width: 700px;
+  background-repeat: no-repeat;
+  text-align: center;
+  float: left;
+  
+ 
+  
+ }
+
+.header {
+    background-color: #ad39c462;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .sidenav {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 70px;  
+    background-color: white;
+    
+    
+  }
+
+  .foto1 {
+    float: left;
+  }
+  
+  
+  .foto2 {
+    float: left;
+  }
+
+  .content {
+
+  width: 800px;
+    float: left;
+    text-align: center;
+    
+    
+  }
+
+
+  /*------Juoksevan-tekstin-tyylimääritys-alkaa-----------------*/
+
+  .scroll-left {
+    height: 50px; 
+    overflow: hidden;
+    position: static;
+    }
+    .scroll-left h2, h4 {
+    position: absolute;
+    width: 1300px;
+    height: 40px;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%); 
+    transform:translateX(100%);
+    /* Apply animation to this element */ 
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 10s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+    30% { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes scroll-left {
+    30% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes scroll-left {
+    30% { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+    }
+
+
+
+  /*-----------------Videon-Kehys alkaa-----------------------------*/
+
+  .videokehys {
+    margin: 0 auto;
+    border: 20px ridge #ddd;
+    
+  }
+
+  
+  /*-------------Link-editorilla-muodostetut-buttontyylit-alkaa--------------*/
+  
+  .nappi {
+    -moz-box-shadow:inset 0px 0px 0px 3px #97c4fe;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #97c4fe;
+    box-shadow:inset 0px 0px 0px 3px #97c4fe;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #4280e3) );
+    background:-moz-linear-gradient( center top, #3d94f6 5%, #4280e3 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#4280e3');
+    background-color:#3d94f6;
+    -webkit-border-top-left-radius:37px;
+    -moz-border-radius-topleft:37px;
+    border-top-left-radius:37px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-radius-topright:0px;
+    border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:37px;
+    -moz-border-radius-bottomright:37px;
+    border-bottom-right-radius:37px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-radius-bottomleft:0px;
+    border-bottom-left-radius:0px;
+  text-indent:0px;
+    border:1px solid #337fed;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    font-weight:normal;
+    font-style:normal;
+  height:50px;
+    line-height:40px;
+  width:200px;
+    text-decoration:none;
+    text-align:center;
+  }.nappi:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4280e3), color-stop(1, #3d94f6) );
+    background:-moz-linear-gradient( center top, #4280e3 5%, #3d94f6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4280e3', endColorstr='#3d94f6');
+    background-color:#4280e3;
+  }.nappi:active {
+    position:relative;
+    top:7px;
+  }
